@@ -14,28 +14,8 @@
     <!-- The <title> element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab) -->
     <title>Just a dumb website</title>
     
-    <!-- The <style> element contains the CSS (Cascading Style Sheets) code to style the page -->
-    <style>
-        body {
-            font-family: sans-serif;
-            /* These styles are for centering, we can ignore them for now */
-            display: flex;
-            flex-direction: column; /* Stack items vertically */
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f0f0f0;
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            color: #555;
-        }
-        ul {
-            list-style-type: square; /* Let's make the bullets squares! */
-        }
-    </style>
+    <!-- The <link> element defines the relationship between the current document and an external resource. Here, we are linking to our stylesheet. -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <!-- The <body> element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, and lists. -->
