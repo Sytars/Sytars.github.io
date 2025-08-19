@@ -1,0 +1,28 @@
+/* This is a CSS comment. Comments in CSS look different than in HTML. */
+
+/* This rule targets the <body> element */
+body {
+    font-family: sans-serif;
+    /* These styles are for centering the content on the page */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+/* This rule targets all <h1> elements */
+h1 {
+    color: #333;
+}
+
+/* This rule targets all <p> elements */
+p {
+    color: #555;
+}
+
+/* This rule targets all <ul> elements */
+ul {
+    list-style-type: square; /* This makes the bullets squares! */
+}
