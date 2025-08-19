@@ -1,38 +1,41 @@
-<!-- This declaration defines that this document is an HTML5 document -->
 <!DOCTYPE html>
-
-<!-- The <html> element is the root element of an HTML page -->
 <html lang="en">
-
-<!-- The <head> element contains meta information about the HTML page -->
 <head>
-    <!-- The <meta charset="UTF-8"> element defines the character set for the page, which is almost always UTF-8 -->
     <meta charset="UTF-8">
-    <!-- The <meta name="viewport"> element gives the browser instructions on how to control the page's dimensions and scaling, which is important for responsive design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- The <title> element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab) -->
-    <title>Just a dumb website</title>
-    
-    <!-- The <link> element defines the relationship between the current document and an external resource. Here, we are linking to our stylesheet. -->
+    <title>My Awesome Website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
-<!-- The <body> element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, and lists. -->
 <body>
-    <!-- The <h1> element defines a large heading. There are 6 levels, from <h1> to <h6> -->
     <h1>Hello, World!</h1>
-    
-    <!-- The <p> element defines a paragraph of text. -->
     <p>This is my first paragraph on my very own website. Learning HTML is fun!</p>
-
-    <!-- The <ul> element defines an unordered (bulleted) list. -->
     <ul>
-        <!-- The <li> element defines a single list item. -->
         <li>First</li>
         <li>Second</li>
-        <li>Third</li>
+        <li>Third list item</li>
     </ul>
+
+    <button id="colorButton">Click Me!</button>
+
+    <!-- The <script> tag is used to embed client-side JavaScript. -->
+    <script>
+        // This is a special event listener that waits for the entire HTML document to be fully loaded and parsed.
+        // This is the safest way to make sure our JavaScript doesn't run too early.
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            // All of our JavaScript code now goes inside this function.
+            
+            // Find the button element on the page by its unique id
+            const button = document.getElementById('colorButton');
+
+            // Add an "event listener" that waits for a 'click' event on our button
+            button.addEventListener('click', function() {
+                // When the button is clicked, add the 'green-button' class to it
+                button.classList.add('green-button');
+            });
+
+        });
+    </script>
 
 </body>
 </html>
